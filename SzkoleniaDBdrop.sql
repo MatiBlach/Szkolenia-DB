@@ -1,0 +1,22 @@
+
+DROP TABLE IF EXISTS Plan_Zajêæ;
+
+DROP TABLE IF EXISTS Przydzielenie;
+
+DROP TABLE IF EXISTS Terminy;
+
+DROP TABLE IF EXISTS Szkolenia;
+
+DROP TABLE IF EXISTS Prowadz¹cy; 
+
+DROP TABLE IF EXISTS Goœcie_specjalni;
+
+DROP TABLE IF EXISTS Uczestnicy;
+
+DROP TABLE IF EXISTS Ludzie;
+
+DROP TABLE IF EXISTS Sale;
+
+DROP TABLE IF EXISTS Oœrodki;
+
+DROP VIEW IF EXISTS TopProwadzacy;

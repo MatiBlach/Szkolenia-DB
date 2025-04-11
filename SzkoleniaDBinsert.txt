@@ -1,0 +1,166 @@
+
+INSERT INTO Ośrodki (Nazwa_Ośrodka, Ulica, Kod_pocztowy, Opis) VALUES
+('BitCode', 'Ulica C', '22-222', 'Ośrodek Informatyczny),
+('FinansePlus', 'Ulica B', '11-111', 'Ośrodek Ekonomiczny'),
+('LingoMasters', 'Ulica A', '00-000', 'Ośrodek Językowy'),
+('MedCare', 'Ulica D', '33-333', 'Ośrodek Medyczny'),
+('ScienceHub', 'Ulica E', '44-444', 'Ośrodek Nauukowy'),
+('CreativeStudio', 'Ulica F', '55-555', 'Ośrodek Artystyczny'),
+('BizPro', 'Ulica G', '66-666', 'Ośrodek Biznesowy'),
+('TechForge', 'Ulica H', '77-777', 'Ośrodek Technologiczny),
+('InnoSpace', 'Ulica I', '88-888', 'Ośrodek Kreatywny'),
+('ProPlan', 'Ulica J', '99-999', 'Ośrodek Projektowy');
+
+
+INSERT INTO Sale (ID_Sali, Numer, Piętro, Liczba_miejsc, Ośrodek, Czynna) VALUES
+(1, 101, 1, 30, 'BitCode', 1),
+(2, 102, 1, 25, 'FinansePlus', 1),
+(3, 103, 2, 40, 'LingoMasters', 1),
+(4, 201, 2, 20, 'MedCare', 1),
+(5, 202, 3, 35, 'ScienceHub', 0),
+(6, 301, 1, 30, 'CreativeStudio', 1),
+(7, 302, 2, 25, 'BizPro', 1),
+(8, 401, 3, 40, 'TechForge', 1),
+(9, 402, 1, 20, 'InnoSpace', 0),
+(10, 501, 2, 35, 'ProPlan', 1);
+
+
+INSERT INTO Ludzie (PESEL, Imię, Nazwisko, Telefon, E_mail) VALUES
+('12345678901', 'Jan', 'Kowalski', '123456789', 'jan.kowalski@example.com'),
+('23456789012', 'Anna', 'Nowak', '234567890', 'anna.nowak@example.com'),
+('34567890123', 'Piotr', 'Wiśniewski', '345678901', 'piotr.wisniewski@example.com'),
+('45678901234', 'Alicja', 'Dąbrowska', '456789012', 'alicja.dabrowska@example.com'),
+('56789012345', 'Krzysztof', 'Lewandowski', '567890123', 'krzysztof.lewandowski@example.com'),
+('67890123456', 'Magdalena', 'Wójcik', '678901234', 'magdalena.wojcik@example.com'),
+('78901234567', 'Marcin', 'Kamiński', '789012345', 'marcin.kaminski@example.com'),
+('89012345678', 'Natalia', 'Kowalczyk', '890123456', 'natalia.kowalczyk@example.com'),
+('90123456789', 'Bartosz', 'Zieliński', '901234567', 'bartosz.zielinski@example.com'),
+('11223344556', 'Karolina', 'Szymańska', '912233445', 'karolina.szymanska@example.com'),
+('22334455667', 'Rafał', 'Woźniak', '223344556', 'rafal.wozniak@example.com'),
+('33445566778', 'Wiktoria', 'Jankowska', '334455667', 'wiktoria.jankowska@example.com'),
+('44556677889', 'Tomasz', 'Włodarczyk', '445566778', 'tomasz.wlodarczyk@example.com'),
+('55667788990', 'Kinga', 'Piotrowska', '556677889', 'kinga.piotrowska@example.com'),
+('66778899001', 'Łukasz', 'Grabowski', '667788990', 'lukasz.grabowski@example.com'),
+('77889900112', 'Oliwia', 'Nowicka', '778899001', 'oliwia.nowicka@example.com'),
+('88990011223', 'Adam', 'Kowalewski', '889900112', 'adam.kowalewski@example.com'),
+('99001122334', 'Monika', 'Jabłońska', '990011223', 'monika.jablonska@example.com'),
+('00112233445', 'Michał', 'Adamczyk', '001122334', 'michal.adamczyk@example.com'),
+('11223344557', 'Karolina', 'Szymańska', '112233445', 'karolina.szymanska2@example.com'),
+('21098765432', 'Marek', 'Kwiatkowski', '210987654', 'marek.kwiatkowski@example.com'),
+('32109876543', 'Agnieszka', 'Kaczmarek', '321098765', 'agnieszka.kaczmarek@example.com'),
+('43210987654', 'Grzegorz', 'Zalewski', '432109876', 'grzegorz.zalewski@example.com'),
+('54321098765', 'Dominika', 'Sikorska', '543210987', 'dominika.sikorska@example.com'),
+('65432109876', 'Patryk', 'Krajewski', '654321098', 'patryk.krajewski@example.com'),
+('76543210987', 'Nina', 'Witkowska', '765432109', 'nina.witkowska@example.com'),
+('87654321098', 'Artur', 'Olejnik', '876543210', 'artur.olejnik@example.com'),
+('98765432109', 'Monika', 'Stępień', '987654321', 'monika.stepien@example.com'),
+('09876543210', 'Kamil', 'Czarnecki', '098765432', 'kamil.czarnecki@example.com'),
+('54321012345', 'Aleksandra', 'Kwiatkowska', '543210123', 'aleksandra.kwiatkowska@example.com');
+
+
+INSERT INTO Uczestnicy (ID_Uczestnika)
+VALUES
+('12345678901'),
+('23456789012'),
+('34567890123'),
+('45678901234'),
+('56789012345'),
+('67890123456'),
+('78901234567'),
+('89012345678'),
+('90123456789'),
+('11223344556');
+
+INSERT INTO Goście_specjalni (ID_Gościa, Firma, Stanowisko)
+VALUES
+('11223344557', 'Software Innovators', 'Architekt Oprogramowania'),
+('22334455667', 'Data Science Solutions', 'Analityk Danych'),
+('33445566778', 'Cyber Security Experts', 'Specjalista ds. Bezpieczeństwa'),
+('44556677889', 'Green Energy Solutions', 'Inżynier Energii Odnawialnej'),
+('55667788990', 'Financial Consultants', 'Doradca Finansowy'),
+('66778899001', 'Marketing Mavericks', 'Specjalista ds. Marketingu'),
+('77889900112', 'HealthTech Visionaries', 'Innowator ds. Technologii Medycznych'),
+('88990011223', 'Manufacturing Excellence', 'Kierownik Produkcji'),
+('99001122334', 'Human Resources Dynamics', 'Specjalista ds. Zasobów Ludzkich'),
+('00112233445', 'Creative Design Studios', 'Projektant Kreatywny');
+
+
+
+INSERT INTO Prowadzący (ID_Prowadzącego, Data_zatrudnienia)
+VALUES
+('21098765432', '2019-01-01'),
+('32109876543', '2019-02-15'),
+('43210987654', '2019-04-30'),
+('54321098765', '2019-06-10'),
+('65432109876', '2019-08-25'),
+('76543210987', '2019-10-07'),
+('87654321098', '2020-01-15'),
+('98765432109', '2020-03-20'),
+('09876543210', '2020-05-02'),
+('54321012345', '2021-01-10');
+
+
+INSERT INTO Szkolenia (Nazwa_Szkolenia, ID_Prowadzącego, Opis, Liczba_zajęć, Ilość_miejsc, Ośrodek)
+VALUES
+('Programowanie od Podstaw', '21098765432', 'Podstawy programowania dla początkujących', 10, 20, 'BitCode'),
+('Kurs Finansowy dla Firm', '32109876543', 'Finanse i księgowość dla przedsiębiorstw', 12, 25, 'FinansePlus'),
+('Angielski Biznesowy', '43210987654', 'Kurs językowy z zakresu biznesu', 15, 30, 'LingoMasters'),
+('Podstawy Medycyny', '54321098765', 'Wprowadzenie do podstaw medycznych', 8, 18, 'MedCare'),
+('Badania Naukowe w Praktyce', '65432109876', 'Praktyczne aspekty prowadzenia badań naukowych', 10, 20, 'ScienceHub'),
+('Sztuka Grafiki Komputerowej', '76543210987', 'Tworzenie grafiki komputerowej i design', 14, 28, 'CreativeStudio'),
+('Zarządzanie Projektem Biznesowym', '87654321098', 'Techniki zarządzania projektami w biznesie', 12, 25, 'BizPro'),
+('Nowoczesne Technologie IT', '98765432109', 'Przegląd nowoczesnych technologii informatycznych', 10, 20, 'TechForge'),
+('Szkolenie Kreatywne dla Artystów', '09876543210', 'Rozwijanie kreatywności w dziedzinie sztuki', 15, 30, 'InnoSpace'),
+('Planowanie Projektów w Praktyce', '54321012345', 'Efektywne planowanie i realizacja projektów', 8, 18, 'ProPlan');
+
+INSERT INTO Terminy (ID_Terminu, Nazwa_Szkolenia, Data_rozpoczęcia, Data_zakończenia, Odwołany)
+VALUES
+(1, 'Programowanie od Podstaw', '2022-02-01', '2022-02-10', 0),
+(2, 'Kurs Finansowy dla Firm', '2022-02-15', '2022-02-24', 0),
+(3, 'Angielski Biznesowy', '2022-03-01', '2022-03-10', 0),
+(4, 'Podstawy Medycyny', '2022-03-15', '2022-03-24', 0),
+(5, 'Badania Naukowe w Praktyce', '2022-04-01', '2022-04-10', 0),
+(6, 'Sztuka Grafiki Komputerowej', '2022-04-15', '2022-04-24', 0),
+(7, 'Zarządzanie Projektem Biznesowym', '2022-05-01', '2022-05-10', 0),
+(8, 'Nowoczesne Technologie IT', '2022-05-15', '2022-05-24', 0),
+(9, 'Szkolenie Kreatywne dla Artystów', '2022-06-01', '2022-06-10', 0),
+(10, 'Planowanie Projektów w Praktyce', '2022-06-15', '2022-06-24', 0);
+
+
+INSERT INTO Plan_Zajęć (ID_Zajęcia, ID_Terminu, ID_SALI, Data, Godzina_rozpoczęcia, Godzina_zakończenia, Odwołane)
+VALUES
+(1, 1, 1, '2022-02-01', '10:00:00', '12:00:00', 0),
+(2, 2, 2, '2022-02-16', '11:30:00', '13:30:00', 0),
+(3, 3, 3, '2022-03-02', '14:00:00', '16:00:00', 0),
+(4, 4, 4, '2022-03-17', '15:30:00', '17:30:00', 0),
+(5, 5, 5, '2022-04-02', '08:00:00', '10:00:00', 0),
+(6, 6, 6, '2022-04-17', '09:30:00', '11:30:00', 0),
+(7, 7, 7, '2022-05-02', '13:00:00', '15:00:00', 0),
+(8, 8, 8, '2022-05-17', '14:30:00', '16:30:00', 0),
+(9, 9, 9, '2022-06-02', '17:00:00', '19:00:00', 0),
+(10, 10, 10, '2022-06-17', '18:30:00', '20:30:00', 0);
+
+INSERT INTO Przydzielenie (ID_Uczestników, ID_Terminu)
+VALUES 
+('12345678901',1),
+('23456789012',2),
+('34567890123',3),
+('45678901234',4),
+('56789012345',5),
+('67890123456',6),
+('78901234567',7),
+('89012345678',8),
+('90123456789',9),
+('11223344556',10),
+('12345678901',10),
+('23456789012',9),
+('34567890123',8),
+('45678901234',7),
+('56789012345',6),
+('67890123456',5),
+('78901234567',4),
+('89012345678',3),
+('90123456789',2),
+('11223344556',1);
+
+
